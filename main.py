@@ -1,11 +1,9 @@
-# requirements: instagrapi, Pillow, moviepy
-
 import datetime
 import os
 import random
 import shutil
-import time
 from pathlib import Path
+from dotenv import load_dotenv
 
 from instagrapi import Client
 from instagrapi.exceptions import LoginRequired
@@ -16,10 +14,11 @@ from compiler import make_compilation
 from GoogleService import upload_video, init_credentials
 
 VideoFileClip.resize = resize
+load_dotenv()
 
 # Instagram
-ACCOUNT_USERNAME = 'jimmysdesks'
-ACCOUNT_PASSWORD = 'r&3@7*DQEj'
+ACCOUNT_USERNAME = os.getenv("INSTAGRAM_USERNAME")
+ACCOUNT_PASSWORD = os.getenv("INSTAGRAM_PASSWORD")
 
 
 # default is lofi music, if you want to use something else,
