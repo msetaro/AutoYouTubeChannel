@@ -25,9 +25,6 @@ ACCOUNT_PASSWORD = os.getenv("INSTAGRAM_PASSWORD")
 # make sure its long (> 1hr) and name the file custom_music.mp3
 USE_CUSTOM_AUDIO = True
 
-INTRO_VID = '' # SET AS '' IF YOU DONT HAVE ONE
-OUTRO_VID = ''
-
 # how many reels to scrape per follower
 REELS_PER_FOLLOWER = 5
 
@@ -36,6 +33,8 @@ title = ''
 description = ''
 tags = []
 
+INTRO_VID = '' # SET AS '' IF YOU DONT HAVE ONE
+OUTRO_VID = ''
 
 
 
